@@ -55,7 +55,6 @@ use Illuminate\Filesystem\Filesystem;
  * @method static \Illuminate\Filesystem\FilesystemManager set(string $name, mixed $disk)
  * @method static \Illuminate\Filesystem\FilesystemManager setApplication(\Illuminate\Contracts\Foundation\Application $app)
  *
- *
  * @see \Illuminate\Filesystem\FilesystemManager
  */
 class Storage extends Facade
