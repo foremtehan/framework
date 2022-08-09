@@ -179,11 +179,15 @@ if (! function_exists('value')) {
     /**
      * Return the default value of the given value.
      *
-     * @param  mixed  $value
+     * @param mixed $value
      * @return mixed
      */
     function value($value, ...$args)
     {
+        if ($value instanceof \BackedEnum) {
+            return $value->value;
+        }
+
         return $value instanceof Closure ? $value(...$args) : $value;
     }
 }
